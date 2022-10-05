@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cafdff;
+    padding: 0px 16px 0 16px;
+}
+
+header {
+    background-color: #eadcff;
+    height: 100vh;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleheader {
+    width: 100%;
+    max-width: 600px;
+}
+
+.subheader {
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    max-width: 350px;
+    line-height: 25px;
+}
+
+button {
+    background-color: #05c7cf;
+    color: white;
+    padding: 18px 16px 8px 16px;
+    cursor: pointer;
+    border-radius: 5%;
+    animation: float 2000ms 3 alternate-reverse;
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.laptop {
+    width: 350px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.logo {
+    width: 300px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font: size 24px;
+    font-weight: bold;
+}
+
+.row {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.headercontainer {
+    width: 50%;
+    margin-right: 20px;
+
+}
+
+/* ABOUT */
+#about {
+    background-color: yellow;
+    padding: 40px 48px 40px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.section__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.section_-description--wrapper {
+    width: 100%;
+    font-size: 19px;
+    line-height: 1.5;
+
+    padding:0 10px 0 0;
+}
+
+.about__image--wrapper {
+    width: 100%;
+    padding:0 10px 0 0;
+ 
+}
+.about__image--wrapper img{
+    width:80%;
+}
+/* discord */
+#discord {
+    background-color: lightblue;
+    padding: 40px 48px 40px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.discord__image--wrapper{
+    width:80%;
+}
+.discord__image--wrapper img{
+    width:100%;
+}
+/* contact */
+#contact{
+    background-color: #dce9ff;
+    padding: 20px 48px 50px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+   max-width: 500px;
+   margin: 0 auto
+}
+input, textarea{
+    margin-bottom:24px;
+    font-size:20px;
+    padding: 6px 0px 6px 0;
+}
+.footer{
+
+        padding: 20px 48px 50px 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+}
+.footer__image{
+    width:300px;
+    margin-bottom:10px;
+    
+}
+.footer__image img{
+    width:100%;
+    max-width:480px;
+}
+.footer__links{
+    margin-bottom:30px;
+}
+.footer__links a{
+    padding:10px;
+}
+
+@media(max-width:720px){
+    .row{
+        flex-direction:column;
+    }
+    .headercontainer{
+        margin-bottom:20px;
+        text-align:center;
+
+    }
+    .titleheader{
+        text-align:center;
+    }
+    .titleheader h1{
+        font-size:40px;
+    }
+    .subheader{
+        text-align:center;
+    }
+ul{
+    display:none;
+}
+.section__description{
+    flex-direction: column;
+    align-items:center;
+}
+.about__image--wrapper{
+    margin-top:20px;
+    width:100%;
+}
+.about__image--wrapper img{
+   
+    width:100%;
+}
+#discord .section__description{
+    flex-direction: column-reverse;
+}
+.discord__image--wrapper{
+    margin-top:20px;
+}
+.discord__image--wrapper{
+    width:100%;
+}
+.section_-description--wrapper{
+    text-align:center;
+}
+
+
+
+}
